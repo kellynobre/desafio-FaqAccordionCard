@@ -1,0 +1,83 @@
+* {
+  font-family: "Kumbh Sans";
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-attachment: fixed;
+}
+
+/*atraves do id da sessão*/
+#faq {
+  width: 60%;
+  min-height: 450px;
+  padding-top: 5%;
+  background-color: #fff;
+  display: flex;
+  border-radius: 2rem;
+  margin: 10% auto;
+}
+
+#faq .esquerda {
+  position: relative;
+  width: 50%;
+  background: url("../images/bg-pattern-desktop.svg"),
+    url("../images/illustration-woman-online-desktop.svg");
+  background-size: 700px, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: -340px, -72px;
+  background-position-y: -203px, top;
+}
+/*imagem do @*/
+#faq .esquerda img.box {
+  position: absolute;
+  top: 117px;
+  left: -92px;
+}
+/*ocultando as imagens mobile no desktop*/
+#faq .esquerda img.illustration-woman-mobile,
+#faq .esquerda img.pattern-mobile {
+  display: none;
+}
+
+#faq .direita {
+  width: 50%;
+  padding-right: 70px;
+  font-size: 16px;
+  color: hsl(238, 29%, 16%);
+}
+#faq .direita h1 {
+  margin: 0;
+  font-size: 26px;
+}
+/*removendo o estilo da lista*/
+#faq .direita ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+/*adicionando a borda na parte de baixo da lista*/
+#faq .direita ul li {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+/*alinhando a questão*/
+#faq .direita .questao {
+  display: flex; /*para ficar um ao lado do outro*/
+  justify-content: space-between;
+  align-items: center;
+}
+/*ao passar o mouse na "questão" */
+#faq .direita .questao:hover {
+  cursor: pointer;
+  color: hsl(14, 88%, 65%);
+}
+#faq .direita .resposta {
+  margin-top: 0;
+  color: hsl(240, 6%, 50%);
+}

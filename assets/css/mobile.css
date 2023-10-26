@@ -1,0 +1,52 @@
+@media (max-width: 375px) {
+  #faq {
+    width: 86%;
+    margin: 120px auto;
+    min-height: fit-content;
+    flex-direction: column;
+  }
+
+  #faq .esquerda {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: none;
+  }
+
+  #faq .esquerda img.box {
+    display: none;
+  }
+
+  #faq .esquerda img.illustration-woman-mobile,
+  #faq .esquerda img.pattern-mobile {
+    display: block;
+  }
+
+  #faq .esquerda img.illustration-woman-mobile {
+    position: relative;
+    bottom: 130px;
+    width: 75%;
+    left: 35px;
+  }
+
+  #faq .esquerda img.pattern-mobile {
+    position: relative;
+    left: 35px;
+    bottom: 200px;
+  }
+
+  #faq .direita {
+    width: 100%;
+    min-height: 400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  #faq .direita h1 {
+    text-align: center;
+  }
+
+  #faq .direita .questao:hover {
+    color: hsl(238, 29%, 16%);
+  }
+}
