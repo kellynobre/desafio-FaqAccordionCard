@@ -74,6 +74,7 @@ body {
 /*removendo o estilo da lista*/
 #faq .direita ul {
   padding-left: 0;
+  overflow: scroll;
   list-style-type: none;
 }
 /*adicionando a borda na parte de baixo da lista*/
